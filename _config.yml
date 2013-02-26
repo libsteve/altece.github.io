@@ -2,7 +2,7 @@ safe:        false
 auto:        false
 server:      true
 server_port: 4000
-baseurl:     /altece
+baseurl:     /
 url: http://localhost:4000
 
 source:      .

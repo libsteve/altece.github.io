@@ -1,0 +1,13 @@
+<nav>
+
+	{% for page in site.pages %}
+	<div>
+		{% if title == page.title %}
+		<a href="{{ page.url }}">{{ page.title }}</a>
+		{% else %}
+		{{ page.title }}
+		{% endif %}
+	</div>
+	{% endfor %}
+
+</nav>
