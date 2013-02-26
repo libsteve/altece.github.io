@@ -2,8 +2,12 @@
 ---
 
 {% include header.html %}
-{% include navigation.html %}
 
-{{ content }}
+<section>
+	<header>{{ title }}</header>
+	<article>
+		{{ content }}
+	</article>
+</section>
 
 {% include footer.html %}
