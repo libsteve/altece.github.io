@@ -160,16 +160,49 @@
     }
 }
 
-@media all and (max-width: 550pt), (width: 550pt) {
+/* thin windows and smartphones */
+@media all and (max-width: 550pt), 
+(width: 550pt),
+only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px)
+and (orientation : portrait) {
     header#alias {
-        margin-top: 0pt;
+        margin-top: 20pt;
     }
+
+	nav {
+		line-height: 1em;
+		padding: 0pt;
+	}
+	nav a {
+		margin-top: 0pt;
+		margin-bottom: 0pt;
+		line-height: 1em;
+	}
 
     figure {
         float: none;
         display: block;
         margin-left: auto;
         margin-right: auto;
+		max-width: 100%;
+    }
+
+	figure img {
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figure img.small {
+        width: 100%;
+    }
+    figure img.medium {
+        width: 100%;
+    }
+    figure img.large {
+        width: 100%;
     }
 }
 

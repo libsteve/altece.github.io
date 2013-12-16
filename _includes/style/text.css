@@ -141,12 +141,59 @@
     }
 }
 
-/* smartphone dimensions (iPhone) */
+/* thin windows and smartphones */
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 568px) {
-    body {
-        font-size: 20pt;
+and (max-device-width : 568px)
+and (orientation: portrait) {
+    html {
+        -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+        /* credit to http://stackoverflow.com/a/2711132/1202880 */
     }
+
+    body {
+        font-size: 40pt;
+    }
+
+	nav a.button {
+		font-size: .75em;
+	}
+
+    a.button {
+        font-size: 1em;
+    }
+
+	/* header tags */
+    h1 {
+        font-size: 2em;
+        font-weight: normal;
+        font-family: inherit;
+    }
+    h2 {
+        font-size: 1.75em;
+        font-weight: normal;
+        font-family: inherit;
+    }
+    h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family: inherit;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: normal;
+        font-family: inherit;
+    }
+    h5 {
+        font-size: 1.25em;
+        font-weight: bold;
+        font-family: inherit;
+    }
+    h6 {
+        font-size: 1.25em;
+        font-weight: normal;
+        font-family: inherit;
+    }
+    /* header tags end */
 }
 
