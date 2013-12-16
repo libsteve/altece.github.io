@@ -1,9 +1,8 @@
 ---
 layout: index
 title: "Portfolio"
+description: "Here lies a compilation of a select assortment of mine own creative works. Some for work, and some for pleasure."
 ---
-
-Here lies a compilation of a select assortment of mine own creative works. Some for work, and some for pleasure.
 
 Feel free to peruse through them at your own pace.
 

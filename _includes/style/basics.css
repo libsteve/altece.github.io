@@ -5,7 +5,7 @@
         height: 100%;
         margin: none;
         background-image: url(img/design_2.png), url(img/background.png);
-        background-size: cover, auto;
+        background-size: contain, auto;
         background-repeat: repeat, repeat;
         background-position: top left, top left;
         background-attachment: fixed;
@@ -54,18 +54,14 @@
 	}
 }
 
-@media all 
-and (max-width : 550pt),
-(width: 550pt) {
+@media all and (max-width : 550pt), (width: 550pt) {
     body {
         width: 100%;
     }
 }
 
 /* tablet dimensions (iPad) */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     body {
         box-shadow: 0pt 0pt 10pt black;
     }
@@ -75,9 +71,7 @@ and (max-device-width : 1024px) {
 }
 
 /* smartphone dimensions (iPhone) */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
     body {
         width: 100%;
         box-shadow: none;
