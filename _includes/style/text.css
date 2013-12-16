@@ -119,6 +119,7 @@
 
     a {
         color: blue;
+		font-size: inherit;
     }
 
     a.button {
@@ -132,7 +133,7 @@
         color: white;
         font-weight: normal;
     }
-    a.button:hover {
+    a.button:hover, a.button-selected {
         color: #32d1f3;
     }
     nav a.button {

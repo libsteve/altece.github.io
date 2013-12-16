@@ -14,9 +14,15 @@
 			</h1>
 		</header>
 		<nav>
-			{% for page in site.pages %}
-				<a class="button" href="{{ page.url }}">{{ page.title }}</a>
-			{% endfor %}
+		{% for p in site.pages %}
+			{% if p.title != "" %}
+				{% if p.title == page.title %}
+					<a class="button button-selected" href="">{{ p.title }}</a>
+				{% else %}
+					<a class="button" href="{{ p.url }}">{{ p.title }}</a>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
 		</nav>
 	</div>
 

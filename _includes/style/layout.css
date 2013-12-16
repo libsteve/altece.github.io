@@ -142,6 +142,10 @@
     nav a.button {
         background-image: none;
     }
+	nav a.button-selected {
+        background-image: url(img/dark_background.png), url(img/dark_background.png);
+		background-repeat: repeat, repeat;
+    }
 	a.button:hover {
 		background-image: url(img/dark_background.png), url(img/dark_background.png);
 		background-repeat: repeat, repeat;
