@@ -14,13 +14,11 @@
 			</h1>
 		</header>
 		<nav>
-		{% for p in site.pages %}
-			{% if p.title != "" %}
-				{% if p.title == page.title %}
-					<a class="button button-selected" href="">{{ p.title }}</a>
-				{% else %}
-					<a class="button" href="{{ p.url }}">{{ p.title }}</a>
-				{% endif %}
+		{% for p in site..data.pages %}
+			{% if p.title == page.title %}
+				<a class="button button-selected" href="">{{ p.title }}</a>
+			{% else %}
+				<a class="button" href="{{ p.url }}">{{ p.title }}</a>
 			{% endif %}
 		{% endfor %}
 		</nav>
