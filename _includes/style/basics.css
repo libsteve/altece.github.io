@@ -1,0 +1,83 @@
+/* default values for the background and navigation bar */
+@media all {
+    html {
+        width: 100%;
+        height: 100%;
+        margin: none;
+        background-image: url(img/design_2.png), url(img/background.png);
+        background-size: contain, auto;
+        background-repeat: repeat, repeat;
+        background-position: top left, top left;
+        background-attachment: fixed;
+    }
+    body {
+        width: 550pt;
+        height: auto;
+        min-height: 100%;
+        margin: 0pt;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0pt;
+        border: none;
+        box-shadow: 0pt 0pt 10pt black;
+        background-image: url(img/content_background.png);
+        background-position: top right;
+		background-repeat: repeat;
+        font-size: 15px;
+    }
+
+    /* navigation specific style */
+    nav {
+        width: 100%;
+        margin: 0pt;
+        padding: 0pt;
+		background-image: url(img/dark_background.png);
+		background-repeat: repeat;
+		background-position: top left;
+		text-align: center;
+	}
+	nav a {
+		font-family: PTSans-Regular, sans-serif;
+		font-size: 1.5em;
+		padding: 2px 5px;
+		margin: 0 2px;
+		line-height: 2em;
+        color: white;
+		//font-variant: small-caps;
+		text-decoration: none;
+		display: inline-block;
+	}
+	nav a:hover {
+		background-image: url(img/dark_background.png);
+		background-repeat: repeat;
+		color: #32d1f3;
+	}
+}
+
+@media all and (max-width : 550pt), (width: 550pt) {
+    body {
+        width: 100%;
+    }
+}
+
+/* tablet dimensions (iPad) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body {
+        box-shadow: 0pt 0pt 10pt black;
+    }
+    nav {
+
+    }
+}
+
+/* smartphone dimensions (iPhone) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    body {
+        width: 100%;
+        box-shadow: none;
+    }
+    nav {
+
+    }
+}
+
