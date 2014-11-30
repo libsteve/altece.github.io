@@ -72,8 +72,9 @@
     }
 
     p {
-        padding: 0pt;
+        padding: inherit;
         padding-left: 1pt;
+        margin: 12pt 0pt;
     }
 
     article {
@@ -157,6 +158,20 @@
     }
     a.button-list {
         margin-right: 5pt;
+    }
+
+    ul, ol {
+        list-style: none;
+        padding: inherit;
+        margin: 12pt 12pt;
+    }
+    ol ol, ol ul, ul ul, ul ol {
+        margin: 0pt 12pt;
+        margin-bottom: 6pt;
+    }
+    li {
+        padding: 0pt;
+        margin: 3pt 0pt;
     }
 }
 
