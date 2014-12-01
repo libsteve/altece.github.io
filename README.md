@@ -11,4 +11,4 @@ If there is a problem running jekyll, be sure you're using the latest version
 of both it and ruby. Remember, jekyll is a ruby-gem.
 
 [1]: https://github.com/mojombo/jekyll
-[2]: http://pages.github.com
+[2]: https://pages.github.com
