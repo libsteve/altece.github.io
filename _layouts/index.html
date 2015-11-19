@@ -1,19 +1,10 @@
 ---
+layout: default
 ---
+<article class="post">
 
-{% include header.html %}
+  <div class="post-content">
+    {{ content }}
+  </div>
 
-<div id="content">
-	<article>
-		<header>
-			<h1>{{ page.title }}</h1>
-			{% if page.description %}
-				<p>{{ page.description }}</p>
-			{% endif %}
-		</header>
-		{{ content }}
-	</article>
-</div>
-
-{% include footer.html %}
-
+</article>
