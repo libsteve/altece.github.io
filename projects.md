@@ -1,6 +1,7 @@
 ---
 layout: index
 title: "Projects"
+permalink: /projects/
 description: "You can find more of my projects on GitHub at <a href='http://github.com/Altece'>github.com/Altece</a>."
 ---
 
