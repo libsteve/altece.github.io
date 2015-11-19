@@ -4,57 +4,66 @@ https://keybase.io/altece
 
 I hereby claim:
 
-  * I am an admin of http://altece.com
+  * I am an admin of http://brun.ws
   * I am altece (https://keybase.io/altece) on keybase.
   * I have a public key with fingerprint 8BB9 7FF6 F003 F8D1 C91D  05CE 42A6 ECA9 5595 440E
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
     "body": {
         "key": {
+            "eldest_kid": "0101806b732e9aaca79fe196a9f34e2846e5ad6a702783f3845119a36abbefa8b4d50a",
             "fingerprint": "8bb97ff6f003f8d1c91d05ce42a6eca95595440e",
             "host": "keybase.io",
             "key_id": "42a6eca95595440e",
+            "kid": "0101806b732e9aaca79fe196a9f34e2846e5ad6a702783f3845119a36abbefa8b4d50a",
             "uid": "d566ee92d2c2e5f77020521c13280f00",
             "username": "altece"
         },
+        "revoke": {
+            "sig_ids": [
+                "0653047c9d9d1f186a4ab6f5cfdc0dda18733cf39fa34e47de2d7b264ad4eda50f"
+            ]
+        },
         "service": {
-            "hostname": "altece.com",
+            "hostname": "brun.ws",
             "protocol": "http:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1398332560,
+    "ctime": 1447961297,
     "expire_in": 157680000,
-    "prev": "4484c5c40479098b58eb227fb9b93827d1db005a3c0695663f55c616a72bd5c7",
-    "seqno": 3,
+    "prev": "a1cbb09cfd8b7be567fb2defcfbe199c8719b37290e26dc9eb19da501e860f89",
+    "seqno": 14,
     "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v0.1.11
+Version: Keybase OpenPGP v2.0.49
 Comment: https://keybase.io/crypto
 
-yMHjAnicbVFbSBRtGN41+1NjTSgUfzrAiGzoKt8cDxt4odBF1k1GFIrrHL5ZP3R3
-1t1x89Dh/ykwMdFCt0yyTI2QIoyEthB37UC0mctCoB2QFKsLxS4sL0LyG6mLoLmZ
-med9Du/D+9S2yZJmXe2zRSLtvbnWWGSp3lJ27H1nMyHraiPhbCZq4MZLQ1439Pv8
-yGsQTkKQZZHXNE4DgNYElVREUgWsAhlK4qAiiSwrsgwDIOEgqvWAqcA2shSAhUjH
-GP5xIRWjf+HXbwxUluMgFCmVUijIajwPKMBSpELSlABwqkkMQL9X8kDMlmoNqEDi
-lIPAWBDhT7yxGfzHvFDRPVjn8+uGrui1GK82DJ/TlBmNPpN3AsquXw4uGXlV3BkL
-gtAfQLqXcJKYqRjItCRpUaBpiuWAg4ANPuSHLmQyWJ4TAH7MGBg0GzICo7AKAxhe
-BKIgswKUKYrXZFEWaYHiVVKVAWAlWgGciEvTGssqHMlJPCWrrMLj/ACs8+qEk8Zr
-Sm5sGUBur2TU+3HhiUhFssWaZvlnc5J5NUtaasbvW3aNpFiet4Uqsktm7e05/zFv
-8qO7pl9WZt3oHPbQrT2VbS3xL44QOf45o8c9+y5rpaJnsmHbueTscPXPsntVt6rG
-8vP7i8ODXxtLl6Jovz0zLqSfn2sZeMt1xxIzW/YOXBqdDkVg65O+O2vDB27bY/F+
-NFtWO1Yiz5fff5ziKziTs2CLLBz5PrXv/6F5R/Do+O6O0uW8y6/7nHPlh3Iv3kQP
-ycOrrfYrj/Kid8MWrYrIrpxJL5lJgVsnk852NH0D4T0/bFMfEmDqNPo0vxhFx0e7
-VooSNSPPmgYXL1z3vBgSiiY+Nhfv3HHyIFdwLf7v8tW1wVfbE6nlsQeJ7t6sulCm
-dR1zfxa1
-=yGVt
+yMJlAnicrVJdaB1FGL0xTUgDIUb8i29dEWoI15n9mZ9LLVR9sKUoisZqai/z883N
+NnH3dnfvTWuwRUUo6gVtHqqkrVChbaD4EGupqJikDRq0LREUmkKIxRBSfVG0otLq
+bKhvPjovwwznnO+cM3Ouo7nQ3vT7kY7JycbYfU1fTf1UK/Q95syNODLWe5zSiDMI
+qxsMaUiz8mConZKDMMIMEUk9F7gQSlBuAHMiuPF8cJlPIBCaCIpcyjzjMT/AmAuP
+CCnBCCZ9HSDh9DomjCqQVJMwyqwsk5JTY4hByDNMY8WxRoEC3xUElOBBwAPfR2CJ
+A3GaM6w5KVIohrG9s4fyqr3/wP/PvmurcjogBIC72lUuBIZaGgpcrLDnMmRD5MAU
+kki8ABYthjJQ4LzU6yRQjwchbzUNK9Zy6pT6HUQCD/lUcc01NpgR4QtJTKCMVkhr
+gRn1PGU8boT16lMNrqbSJb7QPmgRIOM8b7XtvHqoVsXzjm7OlkktKg6n1lA1ibNY
+xUP2ciDLqqXcT7anmoOGQZZv0ssyjLR9G0uoQ5KGceSUsEWqLMz1sO9TTrDLaa8D
+u6thAuUwRwSUMGRXPgbqeWaspETcZmCSSggINdLVYJSRtneuGMVcetTlCFyiFQeJ
+eZ4FAyPIMO7kgXZFcT7S+hQVq2k7i0RWS2yV05Pb1xSa2gutLbfkn7bQvvbWf7/y
+5wtthU8OrV+ZWOhf+87mrkcWpieO/PnpN/4HZ/ctHbj4AK4+sVjccaJ8oXnLi18e
+v37qodu///VO1rj/yg09f/rq1Otb03jN/srXp88fbL/RdXTD3l+Gn5p7cml0U+Pc
+7uPbuk7+vDKBpg5v5UMfv3zH5R8rqH60r3bw77aB+MpM52cdd4fjsz19Tv/bW/Sj
+y4e3HWucusbi7nXrb7v09A+7Ni0+s2N//PgfY9Hy++ONS8+OFQ+0ta58+N38PUsh
+rV4MLmx+dbHzr9eOvXttY8vedTNn5thbM4ear57t2Xm+eJf3RefovbO/TW5Yvn7Z
+e29klH70XE9XsfvBjW+2ipWHd4LZN/7t7NiJN16Z7m6Zj/4BbAdftQ==
+=ksuI
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
