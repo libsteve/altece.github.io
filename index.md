@@ -2,7 +2,7 @@
 layout: index
 ---
 
-Hi, I'm Steve. [Software developer][swdev] extraordinaire.
+Hi, I'm Steve, [Software developer][swdev] extraordinaire.
 
 [Functional programming][fp] and [linguistics][ls] are my passions.
 

@@ -8,7 +8,7 @@ permalink: /about/
     <img class="large" src="/images/me/me.jpg"/>
 </figure>
 
-I gradutaed from the [Rochester Institute of Technology](http://www.rit.edu/) in 2015 with a batchelors in [Computer Science](http://en.wikipedia.org/wiki/Computer_science) 
+I graduated from the [Rochester Institute of Technology](http://www.rit.edu/) in 2015 with a batchelors in [Computer Science](http://en.wikipedia.org/wiki/Computer_science) 
 and a minor in [Deaf Cultural Studies](http://en.wikipedia.org/wiki/Deaf_culture).
 
 Science, mathematics, and linguistics peak my interests and fuel an urge to learn more about the universe we inhabit. Subjects I enjoy following include:
@@ -95,7 +95,7 @@ Science, mathematics, and linguistics peak my interests and fuel an urge to lear
       using a VM where the saved program code and the binary running file, along with 
       saved state, are one-in-the-same.
     - It had some really interesting ideas as a language. It's too bad it never really 
-      cought on.
+      caught on.
 
 ###Languages I'm Learning
 
