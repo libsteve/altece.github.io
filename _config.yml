@@ -1,22 +1,19 @@
-safe:        false
-baseurl:     /
-url: http://localhost:4000
+# Site settings
+title: Steven Brunwasser
+email: sbrunwasser@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Steven Brunwasser is a Software Developer in Mountain View, California,
+  who graduated from the Rochester Institute of Technology in 2015 with a
+  batchelor's degree in Computer Science and a Minor in Deaf Culture Studies.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://brun.ws" # the base hostname & protocol for your site
+twitter_username: altece
+github_username:  altece
 
+# Build settings
 source:      .
 destination: ./_site
-plugins:     ./_plugins
-
-future:      true
-safe:        true
-lsi:         false
-highlighter: pygments
-markdown:    Kramdown
-permalink:   /:categories/:year/:month/:day/:title/
+plugins_dir: ./_plugins
+permalink:   /:categories/:year/:month/:day/:title
+markdown:    kramdown
 encoding:    utf-8
-
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
