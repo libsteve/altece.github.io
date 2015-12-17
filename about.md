@@ -80,6 +80,11 @@ Science, mathematics, and linguistics peak my interests and fuel an urge to lear
 - [C#](http://msdn.microsoft.com/en-us/library/67ef8sbd.aspx)
     - Microsoft's answer to Java, C# is a nice language with some modern programming
       paradigm ideas, such as anonymous functions (called delegates).
+- [F#](https://msdn.microsoft.com/en-us/library/dd233154.aspx)
+    - Microsoft's ML-style functional language, infulenced by OCaml.
+    - Designed to run on the .Net Runtime and be compatible with all of Microsoft's APIs.
+    - Somewhat strange to program with. Programming with object-oriented APIs in a functional
+      language is strange. The resulting programs have a weird blend of APIs from both worlds.
 - [Java](http://en.wikipedia.org/wiki/Java_(programming_language))
     - A good language for teaching Object-Oriented design. 
     - The JVM is a good piece of technology too. 
@@ -89,11 +94,10 @@ Science, mathematics, and linguistics peak my interests and fuel an urge to lear
     - An awful language we have to live with.
     - I've heard good things about ECMAScript 6, so hopefully that works out.
 - [AppleScript](http://en.wikipedia.org/wiki/AppleScript)
-    - I learned this just because I thought it was a cool idea, eve if it's not very
+    - I learned this just because I thought it was a cool idea, even if it's not very
       pratical for "real" programming.
     - This is cool in that it is heavily infulenced by [Smalltalk](http://en.wikipedia.org/wiki/Smalltalk), 
-      using a VM where the saved program code and the binary running file, along with 
-      saved state, are one-in-the-same.
+      using a VM where the saved program code is one-and-the-same wiht the compiled binary code.
     - It had some really interesting ideas as a language. It's too bad it never really 
       caught on.
 
