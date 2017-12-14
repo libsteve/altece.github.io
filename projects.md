@@ -10,7 +10,7 @@ can be found on my [GitHub Page](http://github.com/Altece). Other
 coding samples of mine can be found on [GitHub Gist](http://gist.github.com/altece),
 where I post code isn't necessarily a full-fledged project.
 
-##Graphing
+## Graphing
 
 <figure>
 <img src='/images/projects/Graphing/GraphingIco.png' class='medium' />
@@ -33,7 +33,7 @@ to find a planar isomorphic graph, or to find a K5 or K(3,3) graph
 to prove that it is non-planar.
 
 
-##Reggie the Regex Parser
+## Reggie the Regex Parser
 
 [Official Project Page][reggie]
 
@@ -42,7 +42,7 @@ will have the ability to identify strings that match the regular
 expression.
 
 
-##Cobbler
+## Cobbler
 
 [Official Project Page][cobbler]
 
@@ -53,7 +53,7 @@ C Macros and functions. Eventuallu, it will support a dynamic object
 system library created using the primative object system.
 
 
-##Gravity.app
+## Gravity.app
 
 <figure>
 <img src="/images/projects/Gravity/GravityIco.png" class="medium" />
@@ -78,7 +78,7 @@ and a velocity of (0, 2.5). This results in a near-circular
 orbit.
 
 
-##Chunktional
+## Chunktional
 
 [Official Project Page][chunktional]
 
@@ -87,7 +87,7 @@ and pattern matching similar to that found in functional programming
 languages like Haskell and SML.
 
 
-##BetterBuses
+## BetterBuses
 
 [Official Project Page][betterbusses]
 
