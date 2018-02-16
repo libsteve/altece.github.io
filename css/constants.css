@@ -1,0 +1,23 @@
+:root {
+    --font-size: 16px;
+    --font-size-small: calc(var(--font-size) * 0.875);
+    --font-weight-bold: 400;
+
+    --line-height: 1.5;
+
+    --unit-space: 30px;
+    --unit-padding: calc(var(--unit-space) / 2);
+
+    --text-color: #111;
+    --background-color: #fdfdfd;
+    --code-background-color: #eef;
+    
+    --grey-color: #828282;
+    --grey-color-light: lightgrey;
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --unit-space: 20px;
+    }
+}

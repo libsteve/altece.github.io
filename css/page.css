@@ -1,0 +1,43 @@
+/**
+ * Article Formatting
+ */
+
+article > header,
+article > .content,
+article > .content { margin-bottom: var(--unit-space); }
+
+article > header > .title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+/*
+article > .content h1 { font-size: 32px; }
+article > .content h2 { font-size: 26px; }
+article > .content h3 { font-size: 20px; }
+article > .content h4 { font-size: 14px; }
+
+@media screen and (max-width: 800px) {
+    article > header > .title { font-size: 36px; }
+
+    article > .content h1 { font-size: 28px; }
+    article > .content h2 { font-size: 22px; }
+    article > .content h3 { font-size: 18px; }
+    article > .content h4 { font-size: 12px; }
+}
+*/
+
+/**
+ * Post Sidebar?
+ */
+
+.post-list { margin-left: 0; list-style: none; }
+.post-list > li { margin-bottom: var(--unit-space); }
+
+.post-meta { 
+    font-size: var(--font-size-small);
+    color: var(--grey-color);
+}
+
+.post-link { display: block; font-size: 24px; }

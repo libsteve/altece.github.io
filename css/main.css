@@ -1,0 +1,100 @@
+/**
+ * Text Attributes
+ */
+
+/* html { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } */
+html { font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+body { color: var(--text-color); }
+
+body {
+    -webkit-text-size-adjust: 100%;
+    font-size-adjust: 100%;
+}
+
+body {
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/**
+ * Margins, Padding, Borders, and Display
+ */
+
+* { box-sizing: border-box; border-style: hidden; }
+
+body, .safe-area { 
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.safe-area {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.safe-area {
+    --safe-area-inset-top: 0;
+    --safe-area-inset-bottom: 0;
+    --safe-area-inset-left: var(--unit-padding);
+    --safe-area-inset-right: var(--unit-padding);
+
+    padding-left: var(--safe-area-inset-left);
+    padding-right: var(--safe-area-inset-right);
+}
+
+/**
+ * iPhone X Support
+ */
+
+.body > .safe-area:last-child { padding-bottom: calc(attr(padding-bottom) + env(safe-area-inset-bottom)); }
+.body > .safe-area:first-child { padding-top: calc(attr(padding-top) + env(safe-area-inset-top)); }
+
+.safe-area {
+    --safe-area-inset-left: calc(var(--unit-padding) + env(safe-area-inset-left));
+    --safe-area-inset-right: calc(var(--unit-padding) + env(safe-area-inset-right));
+}
+@supports (padding: max(0px)) {
+    .safe-area {
+        --safe-area-inset-left: max(var(--unit-padding), env(safe-area-inset-left));
+        --safe-area-inset-right: max(var(--unit-padding), env(safe-area-inset-right));
+    }
+}
+
+/**
+ * SVG Icon Rendering
+ */
+
+ .icon > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.icon > svg path { fill: var(--grey-color); }
+
+/**
+ * Rough floating image support...
+ */
+ 
+
+header, footer, section, h1, h2, h3, h4, h5, h6 { clear: both; }
+.float-large {
+    float: right;
+    max-width: 300px;
+}
+.float-medium {
+    float: right;
+    max-width: 200px;
+    margin-bottom: var(--unit-space);
+}
+.float-small {
+    float: right;
+    max-width: 100px;
+    margin-bottom: var(--unit-space);
+}

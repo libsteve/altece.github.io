@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<figure>
-  <img class="large" src="/images/me/me.jpg"/>
-</figure>
+![Photo of Steven Brunwasser](/images/me/me.jpg){: .float-large}
 
 I graduated from the [Rochester Institute of Technology](http://www.rit.edu/) in 2015 with a batchelors in [Computer Science](http://en.wikipedia.org/wiki/Computer_science) 
 and a minor in [Deaf Cultural Studies](http://en.wikipedia.org/wiki/Deaf_culture).
@@ -28,7 +26,7 @@ Science, mathematics, and linguistics peak my interests and fuel an urge to lear
   - [Quantum Mechanics](http://en.wikipedia.org/wiki/Quantum_mechanics)
   - [Theoritical Physics](http://en.wikipedia.org/wiki/Theoretical_physics)
 
-### Acquired Programming Languages
+# Acquired Programming Languages
 
 - [Objective-C](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html)
   - An attempt to jam [Smalltalk](http://en.wikipedia.org/wiki/Smalltalk)-style dynamic objects within C.
@@ -102,7 +100,7 @@ Science, mathematics, and linguistics peak my interests and fuel an urge to lear
   - It had some really interesting ideas as a language. It's too bad it never really 
     caught on.
 
-### Languages I'm Learning
+# Languages I'm Learning
 
 - [American Sign Language](http://en.wikipedia.org/wiki/American_Sign_Language)
     - Not yet fluent, I consider myself "conversational". I've studied for three years

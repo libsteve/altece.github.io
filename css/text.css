@@ -1,0 +1,68 @@
+/**
+ * Text Attributes
+ */
+
+small { font-size: smaller; }
+strong { font-weight: bold; }
+pre, samp, code { font-family: monospace; }
+var { font-style: italic; }
+
+sub, sup, abbr { display: inline; }
+sub, sup { font-size: smaller; }
+sub { vertical-align: sub; }
+sup { vertical-align: super; }
+
+a { text-decoration: none; }
+
+blockquote {
+    color: var(--grey-color);
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+/**
+ * Margins, Padding, Borders, and Display
+ */
+
+header, nav, pre, code, samp, hr { display: block; margin: 0; padding: 0; }
+
+
+figcaption { font-size: smaller; }
+
+dl, ol, ul { padding-left: var(--unit-space); }
+
+blockquote {
+    margin: 1em, 40px;
+    border-left: 4px, solid, var(--grey-color-light);
+    padding-left: calc(var(--unit-space) / 2);
+}
+blockquote > :last-child { margin-bottom: 0; }
+
+img, image { max-width: 100%; vertical-align: middle; }
+
+pre, samp, code {
+    border: 1px solid var(--grey-color-light);
+    border-radius: 3px;
+    background-color: var(--code-background-color);
+}
+
+code { padding: 1px 5px; }
+pre { padding: 8px 12px; overflow-x: auto; }
+pre > code { border: 0; padding: 1px 0; }
+
+/**
+ * Headings
+ */
+
+ h1, h2, h3, h4, h5, h6 { 
+    display: block;
+    font-weight: var(--font-weight-bold);
+    padding: 0;
+}
+
+h1 { font-size: 2em; margin: 0.25em 0; }
+h2 { font-size: 1.5em; margin: 0.25em 0; }
+h3 { font-size: 1.17em; margin: 0.25em 0; }
+h4 { font-size: 1em; margin: 0.25em 0; }
+h5 { font-size: 0.83em; margin: 0.25em 0; }
+h6 { font-size: 0.67em; margin: 0.25em 0; }
