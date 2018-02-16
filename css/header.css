@@ -64,7 +64,7 @@
 .site-title {
     font-size: 2.5em;
     font-weight: 300;
-    line-height: 56px;
+    line-height: 1.5em;
     letter-spacing: -1px;
     margin-bottom: 0;
     flex-basis: auto;
@@ -76,6 +76,10 @@
 .site-title :visited {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    .site-title { font-size: 2.2em; }
 }
 
 /**
@@ -105,6 +109,7 @@
     justify-content: space-between;
     align-items: baseline;
     align-content: stretch;
+    overflow: auto;
 }
 
 /* Put at least a 5 pixel space between each link. */
