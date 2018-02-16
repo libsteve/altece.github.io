@@ -8,13 +8,23 @@
     
     /* position the background image so that it shows as much as possible */
     /* background-image: url(img/header_image.jpg); */
+    background-image: url(/images/background_lowres.jpg);
     background-image: url(/images/background.jpg);
-    background-color: black;
+    /* background-color: rgb(36, 18, 192); */
     background-position: center center;
     background-repeat: none;
     background-size: cover;
 
     margin-bottom: var(--unit-space);
+}
+
+/* Blur the safe-area's background, past its margins. */
+.site-header > .site-header-bar { 
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+@supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+    .site-header > .site-header-bar { background-color: black; }
 }
 
 /* Adjust header height for vertical screen size. */
@@ -33,31 +43,18 @@
     align-items: flex-end;
     align-content: flex-end;
  }
-.site-header > .safe-area {
+ .site-header > .site-header-bar {
+    flex: 0 0 auto;
+    width: 100%;
+ }
+ .site-header-bar > .safe-area {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    align-content: flex-end;
-
-    background-color: slategrey;
-}
-
-@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
-    .site-header > .safe-area {
-        background-color: unset;
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-    }
-}
-
-/* Curve the corners when the horizontal edges are showing. */
-@media screen and (min-width: 800px) {
-    .site-header > .safe-area { 
-        border-radius: var(--safe-area-inset-left) var(--safe-area-inset-right) 0 0;
-    }
+    align-content: flex
 }
 
 /**
@@ -99,7 +96,7 @@
  * Site Navigation Layout
  */
 
-.site-nav { margin: 0; padding: 0; flex-basis: auto; }
+.site-nav { margin: 0; padding: 0; flex-basis: auto; flex-grow: 1; }
 
 .site-nav {
     display: flex;
