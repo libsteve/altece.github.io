@@ -68,7 +68,10 @@ header > h6 { font-size: 1em   ; }
 article { margin-bottom: var(--extra-space); }
 
 p {
-    display: block; margin: 0; padding: 0;
+    display: block; 
+    margin: 0;
+    margin-bottom: var(--less-space);
+    padding: 0;
     border-style: none;
 
     font-size: inherit;
