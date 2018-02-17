@@ -1,16 +1,30 @@
 <header class="site-header">
   <div class="site-header-bar">
     <div class="safe-area">
-      <h1 class="site-title"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <h1 class="site-title">
+        <a class="site-title" href="{{ site.baseurl }}/">
+          {{ site.title }}
+        </a>
+      </h1>
+      
       <nav class="site-nav">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          {% if my_page.title == page.title %}
-          <a class="current-page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% for site_page in site.pages where:'title' %}
+        {% if site_page.title %}
+
+          {% capture page_link_class %}
+          {% if site_page.title == page.title %}
+            {{ "current-page-link" }}
           {% else %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {{ "page-link" }}
           {% endif %}
-          {% endif %}
+          {% endcapture %}
+
+          <a class="{{ page_link_class }}"
+             href="{{ site_page.url | prepend: site.baseurl }}">
+            {{ site_page.title }}
+          </a>
+
+        {% endif %}
         {% endfor %}
         <a class="page-link" href="http://brun.ws/resume.pdf">Resume</a>
       </nav>
