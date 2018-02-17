@@ -1,68 +1,140 @@
 /**
- * Text Attributes
+ * Text Constants
  */
 
-small { font-size: smaller; }
-strong { font-weight: bold; }
-pre, samp, code { font-family: monospace; }
-var { font-style: italic; }
+p, body, blockquote, figcaption, var, pre, code, samp, dl, ol, ul {
+    --grey: #828282;
+    --light-grey: #d3d3d3;
+    --dark-grey: #5f5f5f;
 
-sub, sup, abbr { display: inline; }
-sub, sup { font-size: smaller; }
-sub { vertical-align: sub; }
-sup { vertical-align: super; }
+    --code-color: #eef;
 
-a { text-decoration: none; }
-
-blockquote {
-    color: var(--grey-color);
-    font-style: italic;
-    letter-spacing: -1px;
+    --list-indent: 22px;
 }
-
-/**
- * Margins, Padding, Borders, and Display
- */
-
-header, nav, pre, code, samp, hr { display: block; margin: 0; padding: 0; }
-
-
-figcaption { font-size: smaller; }
-
-dl, ol, ul { padding-left: var(--unit-space); }
-
-blockquote {
-    margin: 1em, 40px;
-    border-left: 4px, solid, var(--grey-color-light);
-    padding-left: calc(var(--unit-space) / 2);
-}
-blockquote > :last-child { margin-bottom: 0; }
-
-img, image { max-width: 100%; vertical-align: middle; }
-
-pre, samp, code {
-    border: 1px solid var(--grey-color-light);
-    border-radius: 3px;
-    background-color: var(--code-background-color);
-}
-
-code { padding: 1px 5px; }
-pre { padding: 8px 12px; overflow-x: auto; }
-pre > code { border: 0; padding: 1px 0; }
 
 /**
  * Headings
  */
 
- h1, h2, h3, h4, h5, h6 { 
-    display: block;
-    font-weight: var(--font-weight-bold);
-    padding: 0;
+h1, h2, h3, h4, h5, h6 {
+    --normal: 400;
+    --bolder: 500;
 }
 
-h1 { font-size: 2em; margin: 0.25em 0; }
-h2 { font-size: 1.5em; margin: 0.25em 0; }
-h3 { font-size: 1.17em; margin: 0.25em 0; }
-h4 { font-size: 1em; margin: 0.25em 0; }
-h5 { font-size: 0.83em; margin: 0.25em 0; }
-h6 { font-size: 0.67em; margin: 0.25em 0; }
+h1, h2, h3, h4, h5, h6 { display: block; margin: 0; padding: 0; }
+
+h1 { font-size: 1.75em; margin-top: 1em   ; margin-bottom: 0.5em ; }
+h2 { font-size: 1.5em ; margin-top: 0.50em; margin-bottom: 0.25em; }
+h3 { font-size: 1.25em; margin-top: 0.25em; margin-bottom: 0.15em; }
+h4 { font-size: 1.15em; margin-top: 0.15em; margin-bottom: 0.1em ; }
+h5 { font-size: 1em   ; margin-top: 0.1em ; margin-bottom: 0.1em ; }
+h6 { font-size: 0.85em; margin-top: 0.1em ; margin-bottom: 0.1em ; }
+
+h1, h2, h3, h4 { font-weight: var(--normal); }
+h5, h6         { font-weight: var(--bolder); }
+
+h1, h2, h3 { font-variant: normal    ; }
+h4, h5, h6 { font-variant: small-caps; }
+
+/**
+ * Main Body and Paragraphs
+ */
+
+ body, p {
+    display: block; margin: 0; padding: 0;
+
+    /**/ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /**/
+    font-variant: normal;
+    font-variant-ligatures: common-ligatures;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+
+    color: black;
+    line-height: 1.5em;
+
+    margin: 0; padding: 0;
+
+    text-decoration: none;
+
+    border-style: none;
+}
+
+/**
+ * Basic Text Formatting
+ */
+
+a, b, i, sub, sup, abbr { 
+    display: inline;
+    margin: 0; padding: 0;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    vertical-align: inherit;
+
+    border-style: none;
+}
+
+a { text-decoration: none; }
+b { font-weight: bold; }
+i { font-style: italic; }
+
+small { font-size: smaller; }
+strong { font-size: larger; }
+
+sub, sup { font-size: smaller; }
+sub { vertical-align: sub; }
+sup { vertical-align: super; }
+
+blockquote {
+    display: block; margin: 0; padding: 0.5em;
+
+    color: var(--grey);
+    font-size: larger;
+    font-weight: lighter;
+    font-variant: normal;
+    font-variant-ligatures: common-ligatures;
+    text-decoration: none;
+
+    border-style: none;
+}
+
+figcaption {
+    display: inline;
+    margin: 0; padding: 0;
+
+    font-size: small;
+    font-weight: normal;
+    font-family: monospace;
+    font-variant: small-caps;
+    vertical-align: baseline;
+    color: var(--grey);
+}
+
+/**
+ * Code and Data
+ */
+
+var, pre, samp, code {
+    color: black;
+    background-color: var(--code-color);
+    border-color: var(--grey);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1em;
+    overflow-x: auto;
+}
+
+var, pre { display: inline; margin: 0; padding: 0; }
+samp, code { display: block; margin: 0; padding: 10px; }
+
+pre, samp, code { font-family: monospace; font-style: normal; font-weight: normal; }
+var { font-style: oblique, italic; font-weight: normal; color: var(--dark-grey); }
+
+/**
+ * Lists
+ */
+
+ dl, ol, ul { display: block; margin: 0; padding: 0; padding-left: var(--list-indent); }
