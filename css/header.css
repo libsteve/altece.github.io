@@ -37,7 +37,7 @@
 .site-header-bar,
 .site-header-bar a { color: var(--white-text); text-decoration: none; }
 
-.site-title { font-size: 2.5em; font-weight: 300; }
+h1.site-title { font-size: 2.5em; font-weight: 300; }
 @media screen and (max-width: 400px) { .site-title { font-size: 2.2em; } }
 
 .site-nav * { font-size: larger; font-weight: 300; }
@@ -88,7 +88,8 @@
     margin-bottom: var(--unit-space);
 }
 
-.site-header > .site-header-bar { flex: 0 0 auto; width: 100%; padding-top: var(--more-space); }
+.site-header > .site-header-bar { flex: 0 0 auto; width: 100%; padding-top: 5%; }
+
 .site-header-bar > .safe-area { width: 100%; }
 
 .site-title { display: inline; flex: 1 1 auto; margin-right: var(--unit-space); }

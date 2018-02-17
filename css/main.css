@@ -1,22 +1,60 @@
 /**
- * Margins, Padding, Borders, and Display
+ * Color Constants
+ */
+
+ :root {
+    --grey: #828282;
+    --light-grey: #d3d3d3;
+    --dark-grey: #5f5f5f;
+
+    --text-color: black;
+    --background-color: #fdfdfd;
+    --code-background-color: #eef;
+
+    --white-text: white;
+    --red-text: #ff6e6e;
+    --link-text: blue;
+}
+
+/**
+ * Layout Constants
+ */
+
+:root { --list-indent: 22px; }
+
+:root {
+    --less-space: calc(var(--unit-space) * 0.75);
+    --unit-space: 15px;
+    --more-space: calc(var(--unit-space) * 1.5);
+    --extra-space: calc(var(--unit-space) * 2);
+}
+@media screen and (max-width: 400px) {
+    :root { --unit-space: 10px; }
+}
+
+:root {
+    --font-size: 16px;
+    --font-size-small: calc(var(--font-size) * 0.875);
+    --font-weight-bold: 400;
+}
+
+
+
+/**
+ * Body and Safe-Area Setup
  */
 
 * { box-sizing: border-box; border-style: hidden; }
 
-body { background-color: #fdfdfd; }
+body { display: block; margin: 0; padding: 0; background-color: #fdfdfd; }
 
-body, .safe-area { 
-    display: block;
-    margin: 0;
-    padding: 0;
-}
+.safe-area { display: block; max-width: 800px; margin: 0 auto; padding: 0; }
 
-.safe-area {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0;
-}
+
+
+/**
+ * iPhone X Support
+ */
 
 .safe-area {
     --safe-area-inset-top: 0;
@@ -26,16 +64,7 @@ body, .safe-area {
 
     padding-left: var(--safe-area-inset-left);
     padding-right: var(--safe-area-inset-right);
-}
 
-/**
- * iPhone X Support
- */
-
-.body > .safe-area:last-child { padding-bottom: calc(attr(padding-bottom) + env(safe-area-inset-bottom)); }
-.body > .safe-area:first-child { padding-top: calc(attr(padding-top) + env(safe-area-inset-top)); }
-
-.safe-area {
     --safe-area-inset-left: calc(var(--unit-space) + env(safe-area-inset-left));
     --safe-area-inset-right: calc(var(--unit-space) + env(safe-area-inset-right));
 }
@@ -44,37 +73,4 @@ body, .safe-area {
         --safe-area-inset-left: max(var(--unit-space), env(safe-area-inset-left));
         --safe-area-inset-right: max(var(--unit-space), env(safe-area-inset-right));
     }
-}
-
-/**
- * SVG Icon Rendering
- */
-
- .icon > svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-}
-.icon > svg path { fill: var(--grey); }
-
-/**
- * Rough floating image support...
- */
- 
-
-header, footer, section, h1, h2, h3, h4, h5, h6 { clear: both; }
-.float-large {
-    float: right;
-    max-width: 300px;
-}
-.float-medium {
-    float: right;
-    max-width: 200px;
-    margin-bottom: var(--unit-space);
-}
-.float-small {
-    float: right;
-    max-width: 100px;
-    margin-bottom: var(--unit-space);
 }

@@ -27,9 +27,13 @@
  * General Footer Layout
  */
 
-.site-footer { display: block; margin: 0; padding: var(--unit-space) var(--extra-space) 0 0; }
+.site-footer { 
+    display: block; margin: 0; 
+    padding: var(--unit-space) 0;
+    padding-bottom: calc(var(--unit-space) + env(safe-area-inset-bottom));
+}
 @supports(padding: max(0px)) {
-    .site-footer { padding-bottom: max(var(--extra-space), env(safe-area-inset-bottom)); }
+    .site-footer { padding-bottom: max(var(--unit-space), env(safe-area-inset-bottom)); }
 }
 
 .site-footer > .safe-area > * { margin-bottom: var(--unit-space); }

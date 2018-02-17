@@ -1,0 +1,30 @@
+/* Small, inline icons that behave like glyfs. */
+img.symbol {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 1em;
+    height: 1em;
+    vertical-align: text-top;
+}
+
+/**
+ * Rough floating image support...
+ */
+ 
+
+header, footer, section, h1, h2, h3, h4, h5, h6 { clear: both; }
+.float-large {
+    float: right;
+    max-width: 300px;
+}
+.float-medium {
+    float: right;
+    max-width: 200px;
+    margin-bottom: var(--unit-space);
+}
+.float-small {
+    float: right;
+    max-width: 100px;
+    margin-bottom: var(--unit-space);
+}

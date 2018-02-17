@@ -1,5 +1,6 @@
 <footer class="site-footer">
   <div class="safe-area">
+
     <section class="contact-section">
       <ul class="contact-list">
         <li>{{ site.title }}</li>
@@ -9,22 +10,22 @@
 
     <section class="social-media-section">
       <ul class="social-media-list">
-        {% if site.github_username %}
+        {% for profile in site.online_profiles %}
         <li>
-          {% include icon-github.html username=site.github_username %}
+          <a href="{{ profile.url }}" title="{{ profile.network }}">
+            <img class="symbol" 
+                 rel="image/svg+xml"
+                 src="{{ profile.network | append: '.svg' | prepend: '/images/icons/' }}">
+            {{ profile.username }}
+          </a>
         </li>
-        {% endif %}
-
-        {% if site.twitter_username %}
-        <li>
-          {% include icon-twitter.html username=site.twitter_username %}
-        </li>
-        {% endif %}
+        {% endfor %}
       </ul>
     </section>
 
     <section class="site-description">
       <p>{{ site.description }}</p>
     </div>
+
   </div>
 </footer>

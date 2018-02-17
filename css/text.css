@@ -22,17 +22,20 @@ h5, h6         { font-weight: var(--bolder); }
 h1, h2, h3 { font-variant: normal    ; }
 h4, h5, h6 { font-variant: small-caps; }
 
-header {
-    font: inherit;
-    text-decoration: none;
-    line-height: 2.5em;
-}
+header { font: inherit; text-decoration: none; }
+
+header > h1 { font-size: 2em   ; }
+header > h2 { font-size: 1.75em; }
+header > h3 { font-size: 1.5em ; }
+header > h4 { font-size: 1.25em; }
+header > h5 { font-size: 1.15em; }
+header > h6 { font-size: 1em   ; }
 
 /**
- * Main Body and Paragraphs
+ * Main Body, Paragraphs, and Articles
  */
 
- body {
+ body, article {
     display: block; margin: 0; padding: 0;
 
     /**/ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*/
@@ -51,20 +54,18 @@ header {
     text-decoration: none;
 
     border-style: none;
-}
-
-body {
+    
     -webkit-text-size-adjust: 100%;
     font-size-adjust: 100%;
-}
-
-body {
+    
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
 }
+
+article { margin-bottom: var(--extra-space); }
 
 p {
     display: block; margin: 0; padding: 0;
@@ -96,7 +97,7 @@ a, b, i, sub, sup, abbr {
     border-style: none;
 }
 
-a { text-decoration: none; }
+a { color: var(--link-text); text-decoration: none; }
 b { font-weight: bold; }
 i { font-style: italic; }
 
