@@ -15,7 +15,11 @@
           <a href="{{ profile.url }}" title="{{ profile.network }}">
             <img class="symbol" 
                  rel="image/svg+xml"
-                 src="{{ profile.network | append: '.svg' | prepend: '/images/icons/' }}">
+                 src="{{ profile.network
+                       | append: '.svg'
+                       | prepend: '/images/icons/'
+                       | prepend: site.baseurl
+                       | prepend: site.url }}">
             {{ profile.username }}
           </a>
         </li>

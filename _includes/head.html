@@ -6,7 +6,6 @@
                                  viewport-fit=cover,
                                  user-scalable=no">
 
-
   <title>
     {% if page.title %}
       {{ page.title }}
@@ -14,20 +13,32 @@
       {{ site.title }}
     {% endif %}
   </title>
-  <meta name="description" content="
-    {% if page.excerpt %}
-      {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
-    {% else %}
-      {{ site.description }}
-    {% endif %}">
+  <meta name="description"
+        content="{% if page.excerpt %}
+                   {{ page.excerpt
+                    | strip_html
+                    | strip_newlines
+                    | truncate: 160 }}
+                 {% else %}
+                   {{ site.description }}
+                 {% endif %}">
 
-  <link rel="stylesheet" href="{{ "/style/main.css" }}">
-  <link rel="stylesheet" href="{{ "/style/text.css" }}">
-  <link rel="stylesheet" href="{{ "/style/image.css" }}">
-  <link rel="stylesheet" href="{{ "/style/page.css" }}">
-  <link rel="stylesheet" href="{{ "/style/header.css" }}">
-  <link rel="stylesheet" href="{{ "/style/footer.css" }}">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  {% assign stylesheets = "main,text,image,page,header,footer" | split: ',' %}
+  {% for stylesheet in stylesheets %}
+    <link rel="stylesheet" href="{{ stylesheet 
+                                  | append: '.css'
+                                  | prepend: '/style/'
+                                  | prepend: site.baseurl
+                                  | prepend: site.url }}">
+  {% endfor %}
+
+  <link rel="canonical" href="{{ page.url
+                               | replace:'index.html',''
+                               | prepend: site.baseurl
+                               | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml"
+        title="{{ site.title }}" href="{{ "/feed.xml"
+                                        | prepend: site.baseurl
+                                        | prepend: site.url }}">
 </head>
