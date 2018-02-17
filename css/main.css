@@ -1,30 +1,10 @@
 /**
- * Text Attributes
- */
-
-/* html { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; } */
-html { font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-body { color: var(--text-color); }
-
-body {
-    -webkit-text-size-adjust: 100%;
-    font-size-adjust: 100%;
-}
-
-body {
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
-}
-
-/**
  * Margins, Padding, Borders, and Display
  */
 
 * { box-sizing: border-box; border-style: hidden; }
+
+body { background-color: #fdfdfd; }
 
 body, .safe-area { 
     display: block;
