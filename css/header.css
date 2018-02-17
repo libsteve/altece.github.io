@@ -1,21 +1,22 @@
+/**
+ * Constants
+ */
+
+.site-header { --minimum-height: 250px; }
+@media screen and (max-height: 400px) { .site-header { --minimum-height: 200px; } }
+@media screen and (max-height: 300px) { .site-header { --minimum-height: 150px; } }
+
+
+
+/**
+ * Visual Appearance
+ */
+
 .site-header {
-    --minimum-height: 250px;
-
-    /* an arbitrary 'large' height */
-    /* min-height: var(--minimum-height); */
-
-    min-height: var(--minimum-height);
-    
-    /* position the background image so that it shows as much as possible */
-    /* background-image: url(img/header_image.jpg); */
-    background-image: url(/images/background_lowres.jpg);
     background-image: url(/images/background.jpg);
-    /* background-color: rgb(36, 18, 192); */
     background-position: center center;
     background-repeat: none;
     background-size: cover;
-
-    margin-bottom: var(--unit-space);
 }
 
 /* Blur the safe-area's background, past its margins. */
@@ -27,80 +28,44 @@
     .site-header > .site-header-bar { background-color: black; }
 }
 
-/* Adjust header height for vertical screen size. */
-@media screen and (max-height: 400px) { .site-header { --minimum-height: 200px; } }
-@media screen and (max-height: 300px) { .site-header { --minimum-height: 150px; } }
+
 
 /**
- * Site Header Layout
+ * Text Syle
  */
 
- .site-header {
+.site-header-bar,
+.site-header-bar a { color: var(--white-text); text-decoration: none; }
+
+.site-title { font-size: 2.5em; font-weight: 300; }
+@media screen and (max-width: 400px) { .site-title { font-size: 2.2em; } }
+
+.site-nav * { font-size: larger; font-weight: 300; }
+.site-nav .current-page-link { color: var(--red-text); }
+
+
+
+/**
+ * Flex Layout
+ */
+
+.site-header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-end;
     align-content: flex-end;
- }
- .site-header > .site-header-bar {
-    flex: 0 0 auto;
-    width: 100%;
- }
- .site-header-bar > .safe-area {
-    width: 100%;
+}
+
+.site-header-bar > .safe-area {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    align-content: flex
+    align-content: space-between;
 }
-
-/**
- * Site Title Text Style
- */
-
-.site-title {
-    font-size: 2.5em;
-    font-weight: 300;
-    line-height: 1.5em;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    flex-basis: auto;
-    flex-grow: 1;
-    margin-right: var(--unit-space);
-}
-.site-title,
-.site-title :hover,
-.site-title :visited {
-    color: white;
-    text-decoration: none;
-}
-
-@media screen and (max-width: 500px) {
-    .site-title { font-size: 2.2em; }
-}
-
-/**
- * Site Navigation Text Style
- */
-
-.site-nav { line-height: 56px; font-size: 18px; }
-.site-nav > .page-link,
-.site-nav > .current-page-link {
-    color: white;
-    font-weight: 300;
-    line-height: var(--line-height);
-    text-align: center;
-}
-.site-nav > .current-page-link { color: rgb(255, 110, 110); }
-
-/**
- * Site Navigation Layout
- */
-
-.site-nav { margin: 0; padding: 0; flex-basis: auto; flex-grow: 1; }
 
 .site-nav {
     display: flex;
@@ -109,9 +74,26 @@
     justify-content: space-between;
     align-items: baseline;
     align-content: stretch;
-    overflow: auto;
+    overflow-x: auto;
 }
 
-/* Put at least a 5 pixel space between each link. */
+
+
+/**
+ * Layout
+ */
+
+.site-header {
+    min-height: var(--minimum-height);
+    margin-bottom: var(--unit-space);
+}
+
+.site-header > .site-header-bar { flex: 0 0 auto; width: 100%; padding-top: var(--more-space); }
+.site-header-bar > .safe-area { width: 100%; }
+
+.site-title { display: inline; flex: 1 1 auto; margin-right: var(--unit-space); }
+@media screen and (max-width: 700px) { .site-title { margin-right: 0; } }
+
+.site-nav { margin: 0; padding: 0; flex: 1 1 auto; }
 .site-nav > * { margin: 0; margin-left: 10px; }
 .site-nav > :first-child { margin-left: 0; }
