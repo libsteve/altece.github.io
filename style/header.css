@@ -37,8 +37,8 @@
 .site-header-bar,
 .site-header-bar a { color: var(--white-text); text-decoration: none; }
 
-h1.site-title { font-size: 2.5em; font-weight: 300; }
-@media screen and (max-width: 400px) { .site-title { font-size: 2.2em; } }
+h1.site-title { font-size: 2.5em; font-weight: 300; margin: 0; }
+@media screen and (max-width: 400px) { h1.site-title { font-size: 2.2em; } }
 
 .site-nav * { font-size: larger; font-weight: 300; }
 .site-nav .current-page-link { color: var(--red-text); }
@@ -88,13 +88,21 @@ h1.site-title { font-size: 2.5em; font-weight: 300; }
     margin-bottom: var(--unit-space);
 }
 
-.site-header > .site-header-bar { flex: 0 0 auto; width: 100%; padding-top: 5%; }
+.site-header > .site-header-bar { 
+    flex: 0 0 auto; width: 100%;
+    padding-top: var(--ultra-space);
+}
 
 .site-header-bar > .safe-area { width: 100%; }
 
-.site-title { display: inline; flex: 1 1 auto; margin-right: var(--unit-space); }
-@media screen and (max-width: 700px) { .site-title { margin-right: 0; } }
+.site-title {
+    display: inline; flex: 1 1 auto;
+    margin-right: var(--unit-space);
+}
+@media screen and (max-width: 700px) {
+    .site-title { margin-right: 0; }
+}
 
-.site-nav { margin: 0; padding: 0; flex: 1 1 auto; }
+.site-nav { margin: 0; padding: 0.5em 0; flex: 1 1 auto; }
 .site-nav > * { margin: 0; margin-left: 10px; }
 .site-nav > :first-child { margin-left: 0; }
