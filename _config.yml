@@ -1,7 +1,6 @@
 ##
 # Site settings
 title: Steven Brunwasser
-email: sbrunwasser@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Steven Brunwasser is a Software Developer in Mountain View, California,
   who graduated from the Rochester Institute of Technology in 2015 with a
@@ -25,6 +24,9 @@ online_profiles:
     username: stevebrun
     url: https://linkedin.com/in/stevebrun
 
+
+recaptcha_key: 6Ld8-UYUAAAAAFuFEGvFJAeWGfalxtgBSv4bdeqA
+recaptcha_server: setup the server
 
 ##
 # Build settings

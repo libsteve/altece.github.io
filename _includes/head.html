@@ -41,4 +41,14 @@
         title="{{ site.title }}" href="{{ "/feed.xml"
                                         | prepend: site.baseurl
                                         | prepend: site.url }}">
+
+  <script type="text/javascript" src="{{ '/scripts/recaptcha.js'
+                                       | prepend: site.baseurl
+                                       | prepend: site.url }}"></script>
+  <script type="text/javascript">
+    (function(){
+      sbrun.reaptcha.siteKey = "{{ site.recaptcha_key }}";
+      sbrun.recaptcha.serverPath = "{{ site.recaptcha_server }}";
+    }());
+  </script>
 </head>
