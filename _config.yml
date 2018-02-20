@@ -26,7 +26,7 @@ online_profiles:
 
 
 recaptcha_key: 6Ld8-UYUAAAAAFuFEGvFJAeWGfalxtgBSv4bdeqA
-recaptcha_server: setup the server
+recaptcha_server: http://verify.brun.ws/request_email
 
 ##
 # Build settings

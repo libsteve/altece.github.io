@@ -4,17 +4,14 @@
     <section class="contact-section">
       <ul class="contact-list">
         <li>{{ site.title }}</li>
-        <!-- <div class="g-recaptcha"
-             data-sitekey="{{ site.recaptcha_key }}"
-             data-callback="emailRecaptchaDidExecute"
-             data-size="invisible">
-        </div> -->
         <li id="email-address-location">
-          Please wait while reCAPTCHA determines whether or not you are human.
-          Only humans are permitted to know my email address.
         </li>
       </ul>
-      <div id="email-recaptcha"></div>
+      <!-- <div class="g-recaptcha"
+           data-sitekey="{{ site.recaptcha_key }}"
+           data-callback="didGenerateRecaptchaToken"
+           data-size="invisible">
+      </div> -->
     </section>
 
     <section class="social-media-section">
@@ -39,6 +36,5 @@
     <section class="site-description">
       <p>{{ site.description }}</p>
     </div>
-
   </div>
 </footer>

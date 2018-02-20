@@ -41,14 +41,48 @@
         title="{{ site.title }}" href="{{ "/feed.xml"
                                         | prepend: site.baseurl
                                         | prepend: site.url }}">
-
-  <script type="text/javascript" src="{{ '/scripts/recaptcha.js'
-                                       | prepend: site.baseurl
-                                       | prepend: site.url }}"></script>
   <script type="text/javascript">
+    window.addEventListener("load", event => {
+      const words = ["brun", "sbrunwasser", "outlook", "steve", "com", "ws", "gmail"];
+      const element = document.getElementById('email-address-location');
+      const link = document.createElement('a');
+      const address = `${words[3]}@${words[0]}.${words[5]}`;
+      link.setAttribute('href', `mailto:${address}`);
+      link.innerText = address;
+      element.appendChild(link);
+    });
+  </script>
+  <!-- <script type="text/javascript">
+    function didGenerateRecaptchaToken(userToken) {
+      if (sbrun.recaptcha.serverPath == '') { 
+        throw "sbrun.recaptcha.serverPath is not set.";
+      }
+      const xhttp = new XMLHttpRequest();
+      xhttp.open('GET', `{{ site.recaptcha_server }}?token=${token}`, true);
+      xhttp.setRequestHeader('Content-type', 'application/json');
+      xhttp.setRequestHeader("Accept", 'text/plain');
+      xhttp.responseType = "text";
+      xhttp.onreadystatechange = function() {
+        if (xhttp.readyState === XMLHttpRequest.DONE) {
+          const element = document.getElementById('email-address-location');
+          if (xhttp.status == 200) {
+            const link = document.createElement('a');
+            link.setAttribute('href', `mailto:${response.email}`);
+            link.innerText = response.email;
+            element.appendChild(link);
+          } else {
+            element.innerText = 
+                `Sorry, but reCAPTCHA seems to think you might not be human,
+                so I won't divulge my email address.`;
+          }
+        }
+      };
+      xhttp.send();
+    }
+    
     (function(){
-      sbrun.reaptcha.siteKey = "{{ site.recaptcha_key }}";
-      sbrun.recaptcha.serverPath = "{{ site.recaptcha_server }}";
+      window.addEventListener("load", event => grecaptcha.execute());
     }());
   </script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 </head>
