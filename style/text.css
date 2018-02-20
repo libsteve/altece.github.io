@@ -10,11 +10,11 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 { display: block; margin: 0; padding: 0; }
 
 h1 { font-size: 1.75em; margin-top: 1em   ; margin-bottom: 0.5em ; }
-h2 { font-size: 1.5em ; margin-top: 0.50em; margin-bottom: 0.25em; }
-h3 { font-size: 1.25em; margin-top: 0.25em; margin-bottom: 0.15em; }
-h4 { font-size: 1.15em; margin-top: 0.15em; margin-bottom: 0.1em ; }
-h5 { font-size: 1em   ; margin-top: 0.1em ; margin-bottom: 0.1em ; }
-h6 { font-size: 0.85em; margin-top: 0.1em ; margin-bottom: 0.1em ; }
+h2 { font-size: 1.5em ; margin-top: 0.50em; margin-bottom: 0.5em ; }
+h3 { font-size: 1.25em; margin-top: 0.25em; margin-bottom: 0.25em; }
+h4 { font-size: 1.15em; margin-top: 0.15em; margin-bottom: 0.25em; }
+h5 { font-size: 1em   ; margin-top: 0.1em ; margin-bottom: 0.15em; }
+h6 { font-size: 0.85em; margin-top: 0.1em ; margin-bottom: 0.15em; }
 
 h1, h2, h3, h4 { font-weight: var(--normal); }
 h5, h6         { font-weight: var(--bolder); }
@@ -160,4 +160,13 @@ var { font-style: oblique, italic; font-weight: normal; color: var(--dark-grey);
  * Lists
  */
 
- dl, ol, ul { display: block; margin: 0; padding: 0; padding-left: var(--list-indent); }
+dl, ol, ul { display: block; margin: 0; padding: 0; }
+ol, ul { padding-left: var(--list-indent); }
+
+dl { margin-top: var(--unit-space); }
+dd {
+    margin-bottom: var(--mini-space);
+    color: var(--darker-grey);
+    font-size: 0.9em;
+    line-height: 1.25em;
+}

@@ -6,6 +6,7 @@
     --grey: #828282;
     --light-grey: #d3d3d3;
     --dark-grey: #5f5f5f;
+    --darker-grey: #161616;
 
     --text-color: black;
     --background-color: #fdfdfd;
@@ -23,6 +24,8 @@
 :root { --list-indent: 22px; }
 
 :root {
+    --micro-space: calc(var(--unit-space) * 0.15);
+    --mini-space: calc(var(--unit-space) * 0.5);
     --less-space: calc(var(--unit-space) * 0.75);
     --unit-space: 15px;
     --more-space: calc(var(--unit-space) * 1.5);
