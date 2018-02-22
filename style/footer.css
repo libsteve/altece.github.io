@@ -7,7 +7,7 @@
 .site-footer .contact-list,
 .site-footer .social-media-list { list-style: none; list-style-type: none; padding: 0; }
 
-
+.site-footer ul > li:before { display: none; }
 
 /**
  * Flex Layout

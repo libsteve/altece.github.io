@@ -2,7 +2,8 @@
 layout: index
 ---
 
-&#x1F44B;&#x1F3FB; Hi, I'm Steve, a [Software developer &#x1F468;&#x1F3FB;&#x200D;&#x1F4BB;](swdev)
+Hi, I'm Steve, a [Software developer][swdev]. &#x1F468;&#x1F3FB;&#x200D;&#x1F4BB;
+{: .hello }
 
 I've been making iOS apps in the [San Francisco Bay Area][sfba].
 

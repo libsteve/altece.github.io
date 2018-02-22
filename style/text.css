@@ -49,8 +49,6 @@ header > h6 { font-size: 1em   ; }
     color: var(--text-color);
     line-height: 1.5em;
 
-    margin: 0; padding: 0;
-
     text-decoration: none;
 
     border-style: none;
@@ -83,6 +81,16 @@ p {
     color: inherit;
     text-decoration: inherit;
 }
+
+p.hello:before { 
+    content: "👋🏻";
+    position: absolute;
+    left: -1em;
+    width: 1em;
+ }
+ @media screen and (max-width: 822px) {
+     p.hello:before { position: unset; margin-right: 0.5em; }
+ }
 
 /**
  * Basic Text Formatting

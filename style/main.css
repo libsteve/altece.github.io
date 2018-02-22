@@ -11,9 +11,8 @@
     --larger-unit: calc(var(--unit) * 2);
     --largest-unit: calc(var(--unit) * 3.5);
 }
-
 @media screen and (max-width: 400px) { 
-    :root { --unit: 10px; }
+    :root { --unit: 14px; }
 }
 
 
@@ -47,7 +46,7 @@
 
 body { display: block; margin: 0; padding: 0; background-color: #fdfdfd; }
 
-.safe-area { display: block; max-width: 800px; margin: 0 auto; padding: 0; }
+.safe-area { display: block; max-width: 800px; margin: 0 auto; padding: 0; position: relative; }
 
 
 
@@ -55,20 +54,25 @@ body { display: block; margin: 0; padding: 0; background-color: #fdfdfd; }
  * iPhone X Support
  */
 
-.safe-area {
+:root {
     --safe-area-inset-top: 0;
     --safe-area-inset-bottom: 0;
     --safe-area-inset-left: var(--unit);
     --safe-area-inset-right: var(--unit);
+}
 
+.safe-area {
     padding-left: var(--safe-area-inset-left);
     padding-right: var(--safe-area-inset-right);
-
-    --safe-area-inset-left: calc(var(--unit) + env(safe-area-inset-left));
-    --safe-area-inset-right: calc(var(--unit) + env(safe-area-inset-right));
 }
-@supports (padding: max(0px)) {
-    .safe-area {
+@supports (env(safe-area-inset-left)) and (env(safe-area-inset-right)) {
+    :root {
+        --safe-area-inset-left: calc(var(--unit) + env(safe-area-inset-left));
+        --safe-area-inset-right: calc(var(--unit) + env(safe-area-inset-right));
+    }
+}
+@supports (padding: max(0px)) and (env(safe-area-inset-left)) and (env(safe-area-inset-right)) {
+    :root {
         --safe-area-inset-left: max(var(--unit), env(safe-area-inset-left));
         --safe-area-inset-right: max(var(--unit), env(safe-area-inset-right));
     }
