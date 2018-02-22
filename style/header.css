@@ -2,9 +2,15 @@
  * Constants
  */
 
-.site-header { --minimum-height: 250px; }
-@media screen and (max-height: 400px) { .site-header { --minimum-height: 200px; } }
-@media screen and (max-height: 300px) { .site-header { --minimum-height: 150px; } }
+.site-header { --minimum-height: 300px; }
+@media screen and (max-height: 1000px) { .site-header { --minimum-height: 300px; } }
+@media screen and (max-height: 900px) { .site-header { --minimum-height: 275px; } }
+@media screen and (max-height: 800px) { .site-header { --minimum-height: 250px; } }
+@media screen and (max-height: 700px) { .site-header { --minimum-height: 225px; } }
+@media screen and (max-height: 600px) { .site-header { --minimum-height: 200px; } }
+@media screen and (max-height: 500px) { .site-header { --minimum-height: 175px; } }
+@media screen and (max-height: 400px) { .site-header { --minimum-height: 150px; } }
+@media screen and (max-height: 300px) { .site-header { --minimum-height: 125px; } }
 
 
 
