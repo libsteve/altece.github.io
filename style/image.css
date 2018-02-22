@@ -21,10 +21,10 @@ header, footer, section, h1, h2, h3, h4, h5, h6 { clear: both; }
 .float-medium {
     float: right;
     max-width: 200px;
-    margin-bottom: var(--unit-space);
+    margin-bottom: var(--unit);
 }
 .float-small {
     float: right;
     max-width: 100px;
-    margin-bottom: var(--unit-space);
+    margin-bottom: var(--unit);
 }

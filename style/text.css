@@ -44,7 +44,7 @@ header > h6 { font-size: 1em   ; }
     font-variant-ligatures: common-ligatures;
     font-weight: normal;
     font-style: normal;
-    font-size: 16px;
+    font-size: var(--unit);
 
     color: var(--text-color);
     line-height: 1.5em;
@@ -65,12 +65,12 @@ header > h6 { font-size: 1em   ; }
     font-kerning: normal;
 }
 
-article { margin-bottom: var(--extra-space); }
+article { margin-bottom: var(--larger-unit); }
 
 p {
     display: block; 
     margin: 0;
-    margin-bottom: var(--less-space);
+    margin-bottom: var(--small-unit);
     padding: 0;
     border-style: none;
 
@@ -112,7 +112,7 @@ sub { vertical-align: sub; }
 sup { vertical-align: super; }
 
 blockquote {
-    display: block; margin: 0; padding: 0.5em;
+    display: block; margin: 0; padding: var(--smaller-unit);
 
     color: var(--grey);
     font-size: larger;
@@ -151,7 +151,7 @@ var, pre, samp, code {
 }
 
 var, pre { display: inline; margin: 0; padding: 0; }
-samp, code { display: block; margin: 0; padding: 10px; }
+samp, code { display: block; margin: 0; padding: var(--small-unit); }
 
 pre, samp, code { font-family: monospace; font-style: normal; font-weight: normal; }
 var { font-style: oblique, italic; font-weight: normal; color: var(--dark-grey); }
@@ -161,11 +161,21 @@ var { font-style: oblique, italic; font-weight: normal; color: var(--dark-grey);
  */
 
 dl, ol, ul { display: block; margin: 0; padding: 0; }
-ol, ul { padding-left: var(--list-indent); }
+ol, ul { padding-left: var(--larger-unit); }
 
-dl { margin-top: var(--unit-space); }
+/* Custom List Chevron */
+ul { list-style: none; position: relative; }
+ul > li:before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    padding-left: var(--smaller-unit);
+}
+
+/* Definitions List */
+dl { margin-top: var(--unit); }
 dd {
-    margin-bottom: var(--mini-space);
+    margin-bottom: var(--smaller-unit);
     color: var(--darker-grey);
     font-size: 0.9em;
     line-height: 1.25em;

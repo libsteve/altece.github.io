@@ -1,4 +1,24 @@
 /**
+ * Unit Constants
+ */
+
+:root {
+    --smallest-unit: calc(var(--unit) * 0.15);
+    --smaller-unit: calc(var(--unit) * 0.5);
+    --small-unit: calc(var(--unit) * 0.75);
+    --unit: 16px;
+    --large-unit: calc(var(--unit) * 1.5);
+    --larger-unit: calc(var(--unit) * 2);
+    --largest-unit: calc(var(--unit) * 3.5);
+}
+
+@media screen and (max-width: 400px) { 
+    :root { --unit: 10px; }
+}
+
+
+
+/**
  * Color Constants
  */
 
@@ -15,25 +35,6 @@
     --white-text: white;
     --red-text: #ff6e6e;
     --link-text: blue;
-}
-
-/**
- * Layout Constants
- */
-
-:root { --list-indent: 22px; }
-
-:root {
-    --micro-space: calc(var(--unit-space) * 0.15);
-    --mini-space: calc(var(--unit-space) * 0.5);
-    --less-space: calc(var(--unit-space) * 0.75);
-    --unit-space: 15px;
-    --more-space: calc(var(--unit-space) * 1.5);
-    --extra-space: calc(var(--unit-space) * 2);
-    --ultra-space: calc(var(--unit-space) * 3.5);
-}
-@media screen and (max-width: 400px) {
-    :root { --unit-space: 10px; }
 }
 
 
@@ -57,18 +58,18 @@ body { display: block; margin: 0; padding: 0; background-color: #fdfdfd; }
 .safe-area {
     --safe-area-inset-top: 0;
     --safe-area-inset-bottom: 0;
-    --safe-area-inset-left: var(--unit-space);
-    --safe-area-inset-right: var(--unit-space);
+    --safe-area-inset-left: var(--unit);
+    --safe-area-inset-right: var(--unit);
 
     padding-left: var(--safe-area-inset-left);
     padding-right: var(--safe-area-inset-right);
 
-    --safe-area-inset-left: calc(var(--unit-space) + env(safe-area-inset-left));
-    --safe-area-inset-right: calc(var(--unit-space) + env(safe-area-inset-right));
+    --safe-area-inset-left: calc(var(--unit) + env(safe-area-inset-left));
+    --safe-area-inset-right: calc(var(--unit) + env(safe-area-inset-right));
 }
 @supports (padding: max(0px)) {
     .safe-area {
-        --safe-area-inset-left: max(var(--unit-space), env(safe-area-inset-left));
-        --safe-area-inset-right: max(var(--unit-space), env(safe-area-inset-right));
+        --safe-area-inset-left: max(var(--unit), env(safe-area-inset-left));
+        --safe-area-inset-right: max(var(--unit), env(safe-area-inset-right));
     }
 }

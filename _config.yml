@@ -2,9 +2,8 @@
 # Site settings
 title: Steven Brunwasser
 description: > # this means to ignore newlines until "baseurl:"
-  Steven Brunwasser is a Software Developer in Mountain View, California,
-  who graduated from the Rochester Institute of Technology in 2015 with a
-  batchelor's degree in Computer Science and a Minor in Deaf Culture Studies.
+  A software developer in the San Francisco Bay Area since 2014.
+  Focuses on developing functional and testable software.
 
 url: "http://brun.ws" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
