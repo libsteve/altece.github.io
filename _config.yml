@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   A software developer in the San Francisco Bay Area since 2014.
   Focuses on developing functional and testable software.
 
-url: "http://brun.ws" # the base hostname & protocol for your site
+url: "https://brun.ws" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink:   /:categories/:year/:month/:day/:title
 
