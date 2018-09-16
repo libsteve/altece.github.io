@@ -7,17 +7,18 @@
         <li id="email-address-location">
         </li>
       </ul>
-      <!-- <div class="g-recaptcha"
+      <div class="g-recaptcha"
            data-sitekey="{{ site.recaptcha_key }}"
            data-callback="didGenerateRecaptchaToken"
            data-size="invisible">
-      </div> -->
+      </div>
     </section>
 
     <section class="social-media-section">
-      <ul class="social-media-list">
+      <div class="social-media-list">
+      <!-- <ul class="social-media-list"> -->
         {% for profile in site.online_profiles %}
-        <li>
+        <!-- <li> -->
           <a href="{{ profile.url }}" title="{{ profile.network }}">
             <img class="symbol" 
                  rel="image/svg+xml"
@@ -28,13 +29,10 @@
                        | prepend: site.url }}">
             {{ profile.username }}
           </a>
-        </li>
+        <!-- </li> -->
         {% endfor %}
-      </ul>
+      <!-- </ul> -->
+      </div>
     </section>
-
-    <section class="site-description">
-      <p>{{ site.description }}</p>
-    </div>
   </div>
 </footer>

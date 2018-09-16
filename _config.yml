@@ -1,13 +1,10 @@
 ##
 # Site settings
 title: Steven Brunwasser
-description: > # this means to ignore newlines until "baseurl:"
-  A software developer in the San Francisco Bay Area since 2014.
-  Focuses on developing functional and testable software.
 
 url: "https://brun.ws" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
-permalink:   /:categories/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title
 
 
 ##
@@ -19,28 +16,39 @@ online_profiles:
   - network: Twitter
     username: altece
     url: https://twitter.com/altece
+  - network: Mastadon
+    username: sbrun@octodon.social
+    url: https://octodon.social/web/accounts/107584
   - network: LinkedIn
     username: stevebrun
     url: https://linkedin.com/in/stevebrun
-
+  - network: Keybase
+    username: altece
+    url: https://keybase.io/altece
+  - network: YouTube
+    username: Steven Brunwasser
+    url: https://www.youtube.com/user/altece/
 
 recaptcha_key: 6Ld8-UYUAAAAAFuFEGvFJAeWGfalxtgBSv4bdeqA
 recaptcha_server: http://verify.brun.ws/request_email
+
 
 ##
 # Build settings
 source:      .
 destination: ./_site
-encoding: utf-8
+encoding:    utf-8
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - CNAME
 
 markdown: kramdown
 plugins:
   - jekyll-avatar
   - jekyll-gist
   - jekyll-relative-links
+  - jekyll-redirect-from
 
 

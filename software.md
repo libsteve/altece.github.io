@@ -1,14 +1,10 @@
 ---
 layout: index
-title: "Projects"
-permalink: /projects
+title: "Software"
+permalink: /software
+redirect_from: /projects
 description: "You can find more of my projects on GitHub at <a href='http://github.com/Altece'>github.com/Altece</a>."
 ---
-
-Here is a collection of personal projects of mine. Many of these
-can be found on my [GitHub Page](http://github.com/Altece). Other
-coding samples of mine can be found on [GitHub Gist](http://gist.github.com/altece),
-where I post code isn't necessarily a full-fledged project.
 
 # Graphing
 

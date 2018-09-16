@@ -1,7 +1,8 @@
 ---
 layout: index
-title: "Portfolio"
-permalink: /portfolio
+title: "Art"
+permalink: /art
+redirect_from: /portfolio
 description: "Here lies a compilation of a select assortment of mine own creative works. Some for work, and some for pleasure."
 ---
 

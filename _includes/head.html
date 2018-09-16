@@ -54,16 +54,21 @@
   </script>
   <!-- <script type="text/javascript">
     function didGenerateRecaptchaToken(userToken) {
-      if (sbrun.recaptcha.serverPath == '') { 
-        throw "sbrun.recaptcha.serverPath is not set.";
-      }
+      // if (sbrun.recaptcha.serverPath == '') { 
+      //   throw "sbrun.recaptcha.serverPath is not set.";
+      // }
+      // const e = document.getElementById('email-address-location');
+      // e.innerText = "one moment please";
+
       const xhttp = new XMLHttpRequest();
-      xhttp.open('GET', `{{ site.recaptcha_server }}?token=${token}`, true);
+      xhttp.open('GET', `{{ site.recaptcha_server }}?token=${userToken}`, true);
       xhttp.setRequestHeader('Content-type', 'application/json');
       xhttp.setRequestHeader("Accept", 'text/plain');
       xhttp.responseType = "text";
       xhttp.onreadystatechange = function() {
         if (xhttp.readyState === XMLHttpRequest.DONE) {
+          console.log(xhttp.status);
+          console.log(xhttp.responseText);
           const element = document.getElementById('email-address-location');
           if (xhttp.status == 200) {
             const link = document.createElement('a');
