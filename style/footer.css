@@ -59,9 +59,19 @@
 .site-footer > .safe-area > .social-media-section { flex-basis: 0 0 40%; }
 @media screen and (max-width: 800px) {
     .site-footer > .safe-area { justify-content: flex-start; }
-    .site-footer > .safe-area > .contact-section { flex: 1 1 5%; padding-right: 12pt; }
-    .site-footer > .safe-area > .social-media-section { flex: 1 1 50%; }
+    .site-footer > .safe-area > .contact-section { flex: 1 100%; padding-right: 12pt; }
+    .site-footer > .safe-area > .social-media-section { flex: 1 100%; }
 }
 @media screen and (max-width: 600px) {
-    .site-footer > .safe-area > * { flex: 1 1 100%; }
+    .site-footer > .safe-area > * { flex: 1 100%; }
+
+    .social-media-section > .social-media-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .social-media-section > .social-media-list a {
+        flex: 1 1 50%;
+    }
 }
